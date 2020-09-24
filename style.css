@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+ line-height: 1.5;
+}
+
+.header{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("./nature.jpg") center/cover no-repeat fixed;
+    position: relative;
+}
+.about-img,
+.about-info{
+    padding: 2rem 0;
+}
+.about-picture-container{
+   
+    max-width: 25rem;
+}
+.about-picture{
+    width: 150%;
+}
+
+@media screen and (min-width: 992px){
+    .about-img,
+    .about-info{
+        float: right;
+        width: 50%;
+        align-items: baseline;
+    }
+}
+
+.about-text{
+    
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.5s all ease-in-out;
+}
+
+.intro-appear{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
